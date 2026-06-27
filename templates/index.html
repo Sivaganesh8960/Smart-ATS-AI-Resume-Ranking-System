@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+AI Resume Screening
+</title>
+
+</head>
+
+
+<body>
+
+
+<h1>
+AI Resume Screening System
+</h1>
+
+
+<h2>
+Single Resume Analysis
+</h2>
+
+
+<form action="/upload"
+method="POST"
+enctype="multipart/form-data">
+
+
+Resume:
+
+<input type="file"
+name="resume"
+required>
+
+
+<br><br>
+
+
+Job Description:
+
+<br>
+
+
+<textarea
+name="job_text"
+rows="8"
+cols="50"
+placeholder="Paste JD here">
+
+</textarea>
+
+
+<br><br>
+
+
+<button>
+Analyze Resume
+</button>
+
+
+</form>
+
+
+
+
+<hr>
+
+
+
+
+<h2>
+Multiple Resume Ranking
+</h2>
+
+
+
+<form action="/rank"
+method="POST"
+enctype="multipart/form-data">
+
+
+Upload Resumes:
+
+
+<input type="file"
+name="resumes"
+multiple
+required>
+
+
+<br><br>
+
+
+Job Description:
+
+<br>
+
+
+<textarea
+name="job_text"
+rows="8"
+cols="50"
+placeholder="Paste JD here">
+
+</textarea>
+
+
+<br><br>
+
+
+<button>
+Rank Candidates
+</button>
+
+
+</form>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Candidate Ranking
+</title>
+
+</head>
+
+
+<body>
+
+
+<h1>
+Candidate Ranking Dashboard
+</h1>
+
+
+
+<table border="1">
+
+
+<tr>
+
+<th>
+Candidate
+</th>
+
+<th>
+Match Score
+</th>
+
+<th>
+Skills
+</th>
+
+</tr>
+
+
+
+{% for c in candidates %}
+
+
+<tr>
+
+
+<td>
+{{c.name}}
+</td>
+
+
+<td>
+{{c.score}} %
+</td>
+
+
+<td>
+{{c.skills}}
+</td>
+
+
+</tr>
+
+
+{% endfor %}
+
+
+
+</table>
+
+
+
+</body>
+
+</html>

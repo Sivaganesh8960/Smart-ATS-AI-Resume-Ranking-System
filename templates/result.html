@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+Resume Result
+</title>
+
+</head>
+
+
+<body>
+
+
+<h1>
+AI Resume Screening Result
+</h1>
+
+
+
+<h2>
+Match Score
+</h2>
+
+
+<h1>
+{{score}} %
+</h1>
+
+
+
+
+<h2>
+Detected Skills
+</h2>
+
+
+<ul>
+
+{% for skill in skills %}
+
+<li>
+{{skill}}
+</li>
+
+{% endfor %}
+
+</ul>
+
+
+
+
+
+<h2>
+Missing Skills
+</h2>
+
+
+{% if missing %}
+
+
+<ul>
+
+{% for skill in missing %}
+
+<li>
+{{skill}}
+</li>
+
+{% endfor %}
+
+</ul>
+
+
+{% else %}
+
+<p>
+No missing skills detected
+</p>
+
+
+{% endif %}
+
+
+
+
+
+
+
+<h2>
+AI Resume Improvement Suggestions
+</h2>
+
+
+<ul>
+
+
+{% for item in feedback %}
+
+<li>
+{{item}}
+</li>
+
+
+{% endfor %}
+
+
+</ul>
+
+
+
+
+</body>
+
+</html>
